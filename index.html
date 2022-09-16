@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+    <h1>My ToDo list</h1>
+
+    <div>
+        <form type="form" href="#">
+            <div>
+                <label>Subject: </label>
+                <input id="subjectBox"></input>
+            </div> <br>
+            <div>
+                <label>Task: </label>
+                <input id="taskBox"></input>
+            </div><br>
+            <button id="add-task" type="button" onclick="newNote()">Add Task</button><br>
+            <div id="message" style="color: red;"></div>
+        </form>
+    </div>
+
+    <div class="content-wrap">
+        <div type='form' id="list">
+            <label for="form">Things I need to do</label>
+            <br><br>
+            <div class="tasks">
+                <span class="myMark" onclick="done(this)"></span>
+                <input type="checkbox" name="task1" id="checkbox">
+                <span class="notes">
+                    <label id="subject-label" style="font-size: 22px;"><strong>Subject: </strong></label>
+                    <label id="task-label" style="font-size: 15px;">Here's a task you need to do.</label>
+                </span>
+                
+                <span class="options">
+                    <i onclick="deleteTask(this)" class="fas fa-trash"></i>
+                    <i onclick="editTask(this)" class="fas fa-edit"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

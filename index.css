@@ -1,0 +1,105 @@
+body {
+    background-color: rgb(36, 34, 34);
+    color: goldenrod;
+    height: 100vh;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+}
+
+#message {
+    margin: 10px;
+}
+
+form {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+input, input:active {
+    outline: none;
+    border-color: goldenrod;
+    border-radius: 10px;
+    background-color: rgb(36, 34, 34);
+    color: rgb(219, 204, 166);
+    font-size: large;
+    width: 50%;
+    margin-left: 10px;
+    padding: 3px;
+}
+#subjectBox {
+    width: fit-content;
+}
+
+input[type=checkbox], .hide {
+    position: absolute;
+    visibility: hidden;
+}
+
+.myMark, .checked {
+    position: absolute;
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+    background-color: whitesmoke;
+    border-radius: 100%;
+}
+
+.tasks:hover .myMark {
+    background-color: rgb(209, 192, 145);
+}
+
+
+.checked {
+    background-color: goldenrod;
+}
+
+
+/* .tasks {background-color: blueviolet;
+    margin: 15px;
+} */
+
+.notes{
+    position: relative;
+    padding: 10px;
+    left: 25px;
+    /* top: px; */
+    /* background-color: gray; */
+}
+
+.options {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 4px;
+    /* justify-content: right; */
+    margin-top: -25px;
+}
+
+.options i {
+    margin: 7px;
+    cursor: pointer;
+    color: goldenrod;
+}
+
+/* #newNote{
+    position: absolute;
+    margin-left: 90%;
+    bottom: 0px;
+    border-width: 5px;
+    border-radius: 100%;
+    border-color: goldenrod;
+    color: goldenrod;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+} */
+
+button {
+    background-color: goldenrod;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+}
