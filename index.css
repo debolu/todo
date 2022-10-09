@@ -1,11 +1,15 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
 body {
-    background-color: rgb(36, 34, 34);
+    background-color: rgb(32, 30, 26);
     color: goldenrod;
     height: 100vh;
     padding: 20px;
+    font-family: "Raleway", "Open-Sans", "serif";
+    font-style: normal;
 }
 h1 {
     text-align: center;
+    font-style: oblique;
 }
 
 #message {
@@ -53,7 +57,7 @@ input[type=checkbox], .hide {
 
 
 .checked {
-    background-color: goldenrod;
+    background-color: rgb(199, 140, 62);
 }
 
 
@@ -67,6 +71,10 @@ input[type=checkbox], .hide {
     left: 25px;
     /* top: px; */
     /* background-color: gray; */
+}
+
+#subject-label, .labels {
+    font-style: oblique;
 }
 
 .options {
@@ -102,4 +110,7 @@ button {
     border: none;
     border-radius: 10px;
     width: 100px;
+}
+button:hover {
+    background-color: rgb(158, 118, 15);
 }
